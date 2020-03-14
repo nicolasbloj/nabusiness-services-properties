@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+zuul:
+  routes:
+    greeting-service:
+      path: /products-logic-service/**
+      serviceId: greeting-service
+
+ribbon:
+  eureka:
+    enabled: false
+
+greeting-service:
+  ribbon:
+    listOfServers: localhost:1111, localhost:1112
