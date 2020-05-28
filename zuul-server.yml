@@ -13,4 +13,4 @@ ribbon:
 
 greeting-service:
   ribbon:
-    listOfServers: localhost:1114
+    listOfServers: localhost:1114, localhost:1113
