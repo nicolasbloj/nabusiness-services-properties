@@ -14,3 +14,12 @@ ribbon:
 greeting-service:
   ribbon:
     listOfServers: localhost:1114, localhost:1113
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        #include: refresh
